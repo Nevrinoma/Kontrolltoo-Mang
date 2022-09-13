@@ -9,6 +9,7 @@ namespace Kontrolltoo_Mang
     internal class Tegelane : Uksus
     {
         private string nimi;
+        int damage = 0;
         List<Ese> eseList = new List<Ese>();
 
         public Tegelane(string nimi)
@@ -20,7 +21,7 @@ namespace Kontrolltoo_Mang
 
         public int punktide_arv()
         {
-            int damage=0;
+            
             foreach (Ese ese in eseList)
             {
                 damage += ese.PunktideArv();
@@ -31,8 +32,15 @@ namespace Kontrolltoo_Mang
 
         public string Info()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Nimi >>> {nimi}\nPunktide Arv >>>{damage}");
+            return ($"Nimi >>> {nimi}\nPunktide Arv >>>{damage}");
         }
+
+        public string valjastaEsemed()
+        {
+            return valjastaEsemed();
+        }
+
 
         public int PunktideArv()
         {
