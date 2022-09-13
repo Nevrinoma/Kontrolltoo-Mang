@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontrolltoo Mang", "Kontrolltoo Mang\Kontrolltoo Mang.csproj", "{FDC9A106-DAC4-4733-B2A4-7EFC01DC460C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC9A106-DAC4-4733-B2A4-7EFC01DC460C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC9A106-DAC4-4733-B2A4-7EFC01DC460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC9A106-DAC4-4733-B2A4-7EFC01DC460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC9A106-DAC4-4733-B2A4-7EFC01DC460C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4E95095-CDC6-44CD-8FC9-AC3D83B7371A}
+	EndGlobalSection
+EndGlobal
