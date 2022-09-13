@@ -20,6 +20,7 @@ namespace Kontrolltoo_Mang
         {
             return punktideArv;
         }
+
         public Ese(string nimetus, int punktideArv)
         {
             this.nimetus = nimetus;

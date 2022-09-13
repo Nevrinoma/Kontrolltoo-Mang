@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Kontrolltoo_Mang
 {
-    internal class Tegelane
+    internal class Tegelane : Uksus
     {
+        public string Info()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int PunktideArv()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
