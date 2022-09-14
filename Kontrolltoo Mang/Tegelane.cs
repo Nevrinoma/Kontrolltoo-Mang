@@ -28,7 +28,10 @@ namespace Kontrolltoo_Mang
         }
 
 
-        public int liseEse(int ese) { return ese; }
+        public int liseEse(Ese ese) {
+            eseList.Add(ese);
+            return ese; 
+        }
 
         public int PunktideArv()
         {
