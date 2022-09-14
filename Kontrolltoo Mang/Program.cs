@@ -14,7 +14,12 @@ List<Ese> eseList = new List<Ese>();
 for (int i = 0; i < eseList.Count; i++)
 {
     string[] row_count = fromfile[i].Split(';');
+
 }
+from_file.Close();
+
+Tegelane one = new Tegelane("Naruto");
+Tegelane two = new Tegelane("Saske");
 
 
 

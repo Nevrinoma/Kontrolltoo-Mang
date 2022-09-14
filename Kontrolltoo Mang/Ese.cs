@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Kontrolltoo_Mang
 {
-    internal class Ese : Uksus
+    internal class Ese : IUksus
     {
         private string nimetus;
         private int punktideArv;
 
         public string Info()
         {
+            Console.WriteLine(nimetus);
             return nimetus;
         }
 

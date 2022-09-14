@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kontrolltoo_Mang
 {
-    internal interface Uksus
+    internal interface IUksus
     {
         int PunktideArv();
         string Info();

@@ -6,22 +6,33 @@ using System.Threading.Tasks;
 
 namespace Kontrolltoo_Mang
 {
-    internal class Tegelane : Uksus
+    internal class Tegelane : IUksus , IComparable<Tegelane>
     {
         private string nimi;
-        int damage = 0;
-        List<Ese> eseList = new List<Ese>();
+        
+        List<Ese> eseList;
 
         public Tegelane(string nimi)
         {
             this.nimi = nimi;
+            //eseList = new List<Ese<();
         }
+
+        public int CompareTo(Tegelane? muu)
+        {
+            if (muu==null)
+            {
+                return 1;
+            }
+            return this.eseList.Count - muu.EsedKogus();
+        }
+
 
         public int liseEse(int ese) { return ese; }
 
-        public int punktide_arv()
+        public int PunktideArv()
         {
-            
+            int damage = 0;
             foreach (Ese ese in eseList)
             {
                 damage += ese.PunktideArv();
@@ -32,19 +43,23 @@ namespace Kontrolltoo_Mang
 
         public string Info()
         {
-            Console.WriteLine($"Nimi >>> {nimi}\nPunktide Arv >>>{damage}");
-            return ($"Nimi >>> {nimi}\nPunktide Arv >>>{damage}");
+            string tegelaseInfo;
+            tegelaseInfo = nimi+ ", " + eseList.Count() + ", " + PunktideArv();
+            return tegelaseInfo;
         }
 
-        public string valjastaEsemed()
+        public void valjastaEsemed()
         {
-            return valjastaEsemed();
+            Console.WriteLine("Esemed >>> ");
+            foreach (Ese item in eseList)
+            {
+                Console.WriteLine(item.Info());
+            }
+            Console.WriteLine();
         }
 
+        private int EsedKogus() { return this.eseList.Count(); }
 
-        public int PunktideArv()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
